@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlueAccent,
+      backgroundColor: Colors.black26,
       appBar: AppBar(
         title: const Text("Basic Information App"),
         centerTitle: true,
@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
             }
           });
         },
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.black12,
         child: const Icon(Icons.add),
       ),
       body: ListView.builder(

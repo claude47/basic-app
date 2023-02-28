@@ -24,7 +24,7 @@ class _FormPageState extends State<FormPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlueAccent,
+      backgroundColor: Colors.black26,
       appBar: AppBar(
         title: const Text("Fill up Form"),
       ),
@@ -38,7 +38,13 @@ class _FormPageState extends State<FormPage> {
                 controller: idController,
                 keyboardType: TextInputType.number,
                 decoration: const InputDecoration(
-                    hintText: "ID Number", labelText: "ID number"),
+                    hintText: "ID Number", labelText: "ID number",
+                    border: OutlineInputBorder(
+                borderSide: BorderSide(
+                color: Colors.black38,
+                )
+          )
+                ),
                 validator: (value) {
                   return (value == "") ? "Please enter your ID Number" : null;
                 },
@@ -48,7 +54,12 @@ class _FormPageState extends State<FormPage> {
                 controller: nameController,
                 keyboardType: TextInputType.text,
                 decoration:
-                const InputDecoration(hintText: "Name", labelText: "Name"),
+                const InputDecoration(hintText: "Name", labelText: "Name",
+                    border: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.black38,
+                        )
+                    )),
                 validator: (value) {
                   return (value == "") ? "Please enter your name" : null;
                 },
@@ -58,7 +69,12 @@ class _FormPageState extends State<FormPage> {
                 controller: bdayController,
                 keyboardType: TextInputType.datetime,
                 decoration: const InputDecoration(
-                    hintText: "Birthday", labelText: "Birthdate"),
+                    hintText: "Birthday", labelText: "Birthdate",
+                    border: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Colors.black38,
+                        )
+                    ),),
                 validator: (value) {
                   return (value == "") ? "Please enter your birthdate" : null;
                 },
@@ -68,7 +84,12 @@ class _FormPageState extends State<FormPage> {
                 controller: courseController,
                 keyboardType: TextInputType.text,
                 decoration: const InputDecoration(
-                    hintText: "Course", labelText: "Course"),
+                    hintText: "Course", labelText: "Course",
+                  border: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.black38,
+                      )
+                  ),),
                 validator: (value) {
                   return (value == "") ? "Please enter your course" : null;
                 },
@@ -78,7 +99,12 @@ class _FormPageState extends State<FormPage> {
                 controller: sectionController,
                 keyboardType: TextInputType.text,
                 decoration: const InputDecoration(
-                    hintText: "Year and Section", labelText: "Year and Section"),
+                    hintText: "Year and Section", labelText: "Year and Section",
+                  border: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.black38,
+                      )
+                  ),),
                 validator: (value) {
                   return (value == "") ? "Please enter your year and section" : null;
                 },
