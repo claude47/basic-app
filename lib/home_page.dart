@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
             }
           });
         },
-        backgroundColor: Colors.black12,
+        backgroundColor: Colors.white38,
         child: const Icon(Icons.add),
       ),
       body: ListView.builder(

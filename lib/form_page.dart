@@ -24,7 +24,7 @@ class _FormPageState extends State<FormPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black26,
+      backgroundColor: Colors.white38,
       appBar: AppBar(
         title: const Text("Fill up Form"),
       ),

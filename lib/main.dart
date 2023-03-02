@@ -6,7 +6,7 @@ void main(){
     debugShowCheckedModeBanner: false,
     title: "Basic Information App",
     theme: ThemeData(
-        primarySwatch: Colors.grey
+        primarySwatch: Colors.brown
     ),
     home: const HomePage(),
   ));

@@ -29,7 +29,7 @@ class DetailsPage extends StatelessWidget {
               ),
               const SizedBox(height: 30),
               Container(
-                padding: EdgeInsets.only(left: 250),
+                padding: EdgeInsets.only(left: 80),
                 child: Column(
                   children: [
                     ListTile(
